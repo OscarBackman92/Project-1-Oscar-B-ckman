@@ -18,18 +18,41 @@ body {
         font-family:'Truculenta', sans-serif ;
 
 }
-h1, h2, h3, {
+h1, h2, h3 {
     font-family: 'Open sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: darkslategray;
 }
 
 /* Header */
 header{
     background-color: rgba(248, 192, 39, 0.774);
 }
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
 
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 /* main content */
 main{
     background-color: lightblue;
@@ -42,39 +65,43 @@ main{
     height: 600px;
     width: 100%;
     background: url("../images/5a055de5-6837-45b4-b9b2-6b27eed0eab0.avif") no-repeat center center/cover;
-    position: relative;
+    position: absolute;
 }
 
 #cover-text {
     background-color: rgba(253, 216, 147, 0.589);
     font-size: 70%;
-    position: realtive;
+    position: relative;
     width: 100%;
-    min-height: 50px;
-    padding: 10px;
-    color: darkslategrey;
+    padding: 15px;
+    margin: 15px auto;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text > h3 {
     color: darkslategray;
 }
 
 /* Reason section */
 #reasons {
     width: 100%;
-    margin-top: 20px auto;
+    margin-top: 10px;
     padding-right: 15px;
     padding-left: 15px;
-    border-top: 1px solid;
 }
 
-#reasons h3 {
+#reasons > h3 {
     margin-bottom: 20px;
     text-align: center;
     font-size: 150%;
     background-color: rgba(253, 216, 147, 0.589);
 }
 
+#breakfast-benefits > div {
+    text-align: center;
+    color: darkslategray;
+    background-color: rgba(253, 216, 147, 0.589);
+    font-size: 150%;
+}
 
 
 /* Footer */

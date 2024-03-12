@@ -16,8 +16,14 @@ body {
 /* Generic project styles */
         color: #3a3a3a;
         font-family:'Truculenta', sans-serif ;
-}
 
+}
+h1, h2, h3 {
+    font-family: 'Open sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
 
 /* Header */
 header{
@@ -29,8 +35,33 @@ main{
     background-color: lightblue;
     /* make main take up avalible space */
     flex: 1 0 auto;
-
 }
+
+/* Hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/5a055de5-6837-45b4-b9b2-6b27eed0eab0.avif") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    background-color: rgba(245, 238, 238, 0.7);
+    font-size: 70%;
+    position: realtive;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
+}
+
+/* Reason section */
+
+
+
 
 /* Footer */
 footer {

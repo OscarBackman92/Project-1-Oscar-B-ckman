@@ -29,10 +29,28 @@ h1, h2, h3 {
 header{
     background-color: rgba(248, 192, 39, 0.774);
 }
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+#menu {
+    font-size: 100%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #c3eb14e1;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -55,9 +73,12 @@ nav {
 }
 /* main content */
 main{
-    background-color: lightblue;
+    background-color: rgb(229, 230, 173);
     /* make main take up avalible space */
     flex: 1 0 auto;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
